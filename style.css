@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700i|Open+Sans:300,400,600,700,800');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+/* GRID */
+
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.clearfix:before, 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+ }
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+/*HEADER*/
+
+.header {
+	background-image: url(https://static.pexels.com/photos/547116/pexels-photo-547116.jpeg);
+  	height: 100vh;
+  	background-size: cover;
+  	background-position: bottom;
+}
+
+.p {
+	margin-top: 0;
+}
+
+.logo {
+	position: absolute;
+	float: left;
+	color: white;
+}
+
+
+.logo p {
+	font-family: 'Merriweather', serif;
+	font-size: 20.8px;
+	font-style: italic;
+	font-weight: 700;
+	position: relative;
+	left: 4px;
+	line-height: 20.8px;
+	margin-top: 0;
+}
+
+.logo i, .logo p {
+	display: inline-block;
+}
+
+
+.logo i {
+	font-size: 20.8px;
+}
+
+.slogan h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	color: white;
+	font-weight: 300;
+}
+
+.slogan {
+	position: relative;
+	top: 355px;
+	max-width: 440px;
+	font-size: 14px;
+	color: white;
+}
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+/*INTRO*/
+
+.intro {
+	display: block;
+	margin-top: 72px;
+}
+
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+.intro p {
+	color: #959595;
+	font-weight: 400;
+}
+
+.phone {
+	width: 100%;
+	margin-top: -110%;
+}
+
+/*GALLERY*/
+
+.gallery {
+	display: table;
+	width: 100%;
+	margin-top: 85px;
+	padding-left: 0px;
+}
+
+.box {
+	width: 100%;
+	height: 320px;
+	padding: 10px;
+	color: white;
+	float: left;
+	min-height: 1px;
+	display: table-cell;
+	position: relative;
+}
+
+.box:after {
+	float: left;
+	min-height: 1px;
+}
+
+.design {
+	background-color: #FFA2A2;
+}
+
+.built {
+	background-color: #63627F;
+}
+
+.shoo {
+	background-color: #C6A2D3;
+}
+
+.clients {
+	background-image: url(https://i.imgur.com/PdhKveM.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.sign {
+	background-image: url(https://i.imgur.com/coxlBFJ.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.perfect {
+	background-color: #84CE9E;
+}
+
+.new {
+	background-image: url(https://i.imgur.com/db7Z4kx.jpg);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.more {
+	bottom: 10px;
+	position: absolute;
+}
+
+.more a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.more i {
+	display: inline-block;
+	color: white;
+	transition: 0.6s ease-in;
+}
+
+.box .heart {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	transition: 0.5s ease-in;
+}
+
+.heart:hover .fa-heart-o, .fa-heart {
+	display: none;
+}
+
+.heart:hover .fa-heart {
+	display: inline;
+	cursor: pointer;
+}
+
+.sign, .clients {
+	text-shadow: 1px 1px 1px black;
+}
+
+/* DETAILS */
+
+
+
+.details, .reasons, .promotion {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* CAR PHOTO */
+
+
+.power {
+	background-image: url(https://i.imgur.com/DJqraJJ.jpg);
+  	height: 100vh;
+  	background-size: cover;
+  	background-position: bottom;
+  	background-attachment: fixed;
+  	position: relative;
+}
+
+.power .slogan {
+	top: 10vh;
+}
+
+.power .slogan h1 {
+	line-height: 70px;
+}
+
+.power .more {
+	bottom: -50%;
+}
+
+/* PROMOTION */
+
+
+.promotion .plan {
+	padding: 20px;
+	transition: 0.2s ease-in;
+}
+
+.promotion .plan:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+button {
+	padding: 5px 10px;
+	color: white;
+	border-radius: 5%;
+	border: transparent;
+	font-size: 15px;
+}
+
+.legacy {
+	background-color: #D3D1CD;
+}
+
+.popular {
+	background-color: #b478df;
+	border: transparent;
+}
+
+.buy {
+	background-color: #84CE9E;
+	transition: 0.7s ease-in;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.promotion .buy:hover {
+	background-color: #54cd63;
+	cursor: pointer;
+}
+
+.promotion i {
+	color: #aeaeae;
+	transition: 0.5s ease-in;
+}
+
+.promotion i:hover {
+	color: #313131;
+	cursor: pointer;
+}
+
+/* REASONS */
+
+
+.reasons {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #84CE9E;
+	color: white;
+}
+
+footer {
+	background-color: #182430;
+	color: white;
+	padding-bottom: 20px;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+footer .input {
+	padding: 15px;
+	margin: 0;
+	border: 1px solid white;
+	width: 80%;
+	float: left;
+}
+
+footer .check {
+	width: 10%;
+	padding: 15px;
+	margin-left: 0;
+	background-color: #83C99B;
+	border: none;
+	transition: 0.5s ease-in;
+	border-radius: 0;
+}
+
+footer .check:hover {
+	background-color: #54cd63;
+	cursor: pointer;
+}
+/* should look like this https://i.imgur.com/hVQ51zG.jpg */
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-offset-s-0 {margin-left: 0;}
+    
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}	
+	
+	.header .slogan {
+		top: 40vh;
+	}
+	
+	.header .slogan h1 {
+		line-height: 60px;
+	}
+	
+    .intro .phone {
+    	display: none;	
+	}
+	
+	.power .slogan {
+		position: absolute;
+		max-width: 440px;
+		font-size: 14px;
+		color: white;
+		top: 10vh;
+	}
+	.power .slogan h1 {
+		line-height: 60px;
+	}
+	
+	
+	.power .more {
+		bottom: 20%;
+	}
+	
+	section, [class*="col-"] {
+		padding-left: 5px;
+	}
+	
+	.gallery [class*="col-"] {
+		padding-left: 0px;
+	}
+
+	.slogan .more {
+		bottom: -40px;
+	}
+
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+	
+	.box {
+		font-size: 12px;
+		height: 400px;
+	}
+}
